@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Café y algo +</title>
+
+</head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Café y algo +</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f5efe6;
+            color:#080808;
+            line-height:1.6;
+        }
+        
+        header{
+            background-color:#f3f1f0;
+            padding:10px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .logo img{
+        width:200px;
+        height:110px;
+        padding: 1%;
+        border-radius:20px;
+        }
+        nav{
+            display:flex;
+            gap:30px;
+        }
+
+        nav a{
+            color:rgba(66, 28, 2, 0.877);
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#080808;
+        }
+
+        .inicio{
+            height:100vh;
+            background:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085') center/cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .inicio-contenido{
+            background-color:rgba(0,0,0,0.5);
+            padding:40px;
+            border-radius:15px;
+        }
+
+        .inicio h1{
+            font-size:55px;
+            margin-bottom:20px;
+        }
+
+        .inicio p{
+            font-size:22px;
+        }
+
+        .video{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-top:1
+        0px;
+        }
+
+        .video video{
+        width:100%;
+        height:1000px;
+        object-fit:cover;
+        border-radius:5px;
+        box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        section{
+            padding:80px 20px;
+            text-align:center;
+        }
+
+        h2{
+            font-size:40px;
+            margin-bottom:20px;
+            color:#6f4e37;
+        }
+
+        .productos{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+            margin-top:40px;
+        }
+
+        .card{
+            background:white;
+            width:250px;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            margin:15px 0;
+        }
+
+        .card p{
+            padding:0 15px 20px;
+        }
+
+        iframe{
+            width:80%;
+            height:400px;
+            border-radius:15px;
+        }
+
+        footer{
+            background:#6f4e37;
+            color:white;
+            text-align:center;
+            padding:40px;
+            position:static;
+            bottom:0;
+            width:100%;
+        }
+
+        .boton{
+            display:inline-block;
+            margin-top:20px;
+            background:#c89f7b;
+            color:white;
+            padding:15px 30px;
+            border-radius:10px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .boton:hover{
+            background:#a67b5b;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+        <img src="cafe2.jpg" alt="Logo Cafetería">
+    </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#historia">Historia</a>
+            <a href="#mision">Misión y Visión</a>
+            <a href="#productos">Productos</a>
+            <a href="#otros servicios">Otros servicios</a>
+            <a href="#contactenos">Contactenos</a>
+        </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="inicio-contenido">
+            <h1>Bienvenidos a Café y algo +</h1>
+
+            <p>
+                Descubre el verdadero sabor del café,
+                serca de ti, para hacer tu vida más fácil
+            </p>
+
+            <a href="#contactenos" class="boton">
+                Visítanos
+            </a>
+        </div>
+    </section>
+
+    <section id="historia">
+        <h2>Nuestra Historia</h2>
+
+        <p>
+            café y algo + nació con el sueño de compartir experiencias
+            únicas alrededor de una taza de café. Trabajamos con
+            productores locales y utilizamos tecnología moderna para
+            garantizar la mejor calidad en cada grano.
+        </p>
+
+        <section class="video">
+
+    <h2>Conoce Nuestro Café</h2>
+
+    <video controls autoplay muted loop>
+
+        <source src="cafe.mp4" type="video/mp4">
+
+        Tu navegador no soporta videos.
+
+    </video>
+            
+        </div>
+    </section>
+
+    <section id="mision">
+        <h2>Misión y Visión</h2>
+
+        <p>
+            <strong>Misión:</strong>
+            Brindar experiencias únicas a través de café de alta calidad,
+            promoviendo la cultura cafetera y la innovación.
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Visión:</strong>
+            Ser reconocidos como una cafetería líder en experiencias,
+            sostenibilidad y tecnología aplicada al café.
+        </p>
+    </section>
+
+    <section id="productos">
+
+        <h2>Nuestros Productos</h2>
+
+        <div class="productos">
+
+            <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\cigarrillo.jpg"alt="Cigarro Premium">
+        <h3>Cigarrillo</h3>
+        <p>Precio: $1.200</p>
+    </div>
+    
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\cafe con leche.jpg"alt="Café Expreso">
+        <h3>Café con leche </h3>
+        <p>Precio: $ 2400</p>
+    </div>
+
+<div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\capuchino.jpg"alt="Café Expreso">
+        <h3>Capuchino </h3>
+        <p>Precio: $ 2800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\chocolisto.jpg"alt="Café Expreso">
+        <h3>Chocolisto</h3>
+        <p>Precio: $ 2.800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\aromatica.jpg"alt="Café Expreso">
+        <h3>Aromática</h3>
+        <p>Precio: $1.800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\tinto.jpg"alt="Café Expreso">
+        <h3>Tinto</h3>
+        <p>Precio: $1.800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\carajillo.jpg"alt="Café Expreso">
+        <h3>Caragillo</h3>
+        <p>Precio: $2.000</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\empanada mixta.jpg"alt="Café Expreso">
+        <h3>Empanada mixta</h3>
+        <p>Precio: $3.300</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\empanada de carne.jpg"alt="Café Expreso">
+        <h3>Empanada de carne</h3>
+        <p>Precio: $2.800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\empanada de  pollo.jpg"alt="Café Expreso">
+        <h3>Empanada de pollo</h3>
+        <p>Precio: $2.800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\empanada de  papa carne.jpg"alt="Café Expreso">
+        <h3>Empanada de papa carne</h3>
+        <p>Precio: $2.800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\empanada pollo champiñon.jpg"alt="Café Expreso">
+        <h3>Empanada de pollo champiñon</h3>
+        <p>Precio: $2.800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\arepa de  huevo.jpg"alt="Café Expreso">
+        <h3>Arepa de huevo</h3>
+        <p>Precio: $3.300</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\arepa de queso.jpg"alt="Café Expreso">
+        <h3>Arepa de queso</h3>
+        <p>Precio: $2.800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\buñuelo.jpg"alt="Café Expreso">
+        <h3>Buñuelo</h3>
+        <p>Precio: $2.800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\pandebono.jpg"alt="Café Expreso">
+        <h3>Pan de bono de bocadillo y queso</h3>
+        <p>Precio: $2.800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\cerveza.jpg"alt="Café Expreso">
+        <h3>Cerveza, Aguila, Aguila light, Poker y Club colombia</h3>
+        <p>Precio: $ 3.800</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\CORONITA.jpg"alt="Café Expreso">
+        <h3>Coronita</h3>
+        <p>Precio: $4.000</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\pasteleria.jpg"alt="Café Expreso">
+        <h3>Pastelería</h3>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\confiteria.jpg"alt="Café Expreso">
+        <h3>Confitería</h3>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\paquetes ponques y galletas.jpg"alt="Café Expreso">
+        <h3>Paquetes y Ponques y galletas</h3>
+    </div>
+    
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\alpina.jpg"alt="Café Expreso">
+        <h3> Jugos, Yogurth, Té frio, Energizantes y Avena</h3>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\productos postobon.jpg"alt="Café Expreso">
+        <h3> Productos Postobón</h3>
+    </div>
+    
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\productos coca cola.jpg"alt="Café Expreso">
+        <h3> Productos Coca cola</h3>
+    </div>
+
+    </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="otros servicios">
+
+        <h2>Otros servicios</h2>
+
+        <div class="productos">
+
+        <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\Captura14.jpg"alt="Café Expreso">
+        <h3> Servientrega</h3>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\efecty.jpg"alt="Café Expreso">
+        <h3> Efecty</h3>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\WesternUnion.jpg"alt="Café Expreso">
+        <h3> WesternUnion</h3>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\ANGELA OSTOR\Desktop\Pagina html\papeleria.jpg"alt="Café Expreso">
+        <h3> Papeleria</h3>
+    </div>
+    </div>
+
+    </section>
+
+    <section id="contactenos">
+
+        <h2>contactenos</h2>
+
+        <p>
+            Dirección: Cr 72a 7f 47 Bogota Castilla
+        </p>
+
+        <p>
+            Teléfono: 320 9845792
+        </p>
+
+        <p>
+            Email: cafeyalgomasint@gmail.com
+        </p>
+    
+    </section>
+
+    <footer>
+        <p>
+            © 2026 Café y algo + - Todos los derechos reservados
+        </p>
+    </footer>
+
+</body>
+</html>
